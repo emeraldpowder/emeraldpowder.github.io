@@ -45,3 +45,13 @@ collections:
   unity-assets:
     output: true
     permalink: /unity-assets/:path/
+
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
