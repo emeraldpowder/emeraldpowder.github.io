@@ -3,13 +3,13 @@ layout: page
 title: Camera Scaler
 ---
 
-[Get it on Asset Store]()
+[Get it on Asset Store](https://u3d.as/2Tag)
 
 Camera Scaler component, that works just like Canvas Scaler (Expand/Shrink modes, making camera match width instead of height, etc), for both prespective and orthographics cameras
 
 ### How to use it
 
-Add the `Camera Scaler` component to game object with Camera. Set `ReferenceResolution` to the resolution you have set in Game View (or resolution you usually develop & test you game with) and choose `Mode` that fits your game. You can see different modes behaviour on video or in included example scenes
+Add the `Camera Scaler` component to game object with Camera. Set `ReferenceResolution` to the resolution you have set in Game View (or resolution you usually develop & test you game with) and choose `Mode` that fits your game. You can see different modes behaviour on [video](), in a [cheatsheet](#modes-cheatsheet) or in included example scenes
 
 ### Modes
 * **Constant Width** - this mode keeps camera width (or horizontal fov, in case of perspective camera) constant on all aspect ratios. Works the same as **MatchWidthOrHeight** with **Match** set to 0
@@ -32,4 +32,8 @@ No, this component only work in play mode and in game builds. That makes it easi
 
 There is two scenes in Examples folder, **2D Playground** and **3D Playground**. You can launch the game and try to resize Game window, to see how the camera scaler works. Also try to change Mode on Main Camera, to check different working modes
 
-[Get it on Asset Store]()
+### Modes cheatsheet
+
+[![Modes cheatsheet]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})
+
+[Get it on Asset Store](https://u3d.as/2Tag)
