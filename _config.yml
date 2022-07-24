@@ -44,4 +44,4 @@ exclude:
 collections:
   unity_assets:
     output: true
-    permalink: /unity_assets/:path/
+    permalink: /unity-assets/:path/
