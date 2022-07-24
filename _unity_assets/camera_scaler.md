@@ -21,6 +21,9 @@ Add the `Camera Scaler` component to game object with Camera. Set `ReferenceReso
 ### Scripting APIs
 
 This component controls Camera's `size` (for ortho) or `fov` (for perspective) properties. So you can't write to them from your scripts to zoom camera when using camera scaler. Instead, you can use `CameraScaler.CameraZoom` property, that is set to 1 by default
+
 Additionaly, you can use read-only properties `CameraScaler.HorizontalSize` and `CameraScaler.HorizontalFov`, if you need this values
 
 ### Example scenes
+
+[Get it on Asset Store]()
