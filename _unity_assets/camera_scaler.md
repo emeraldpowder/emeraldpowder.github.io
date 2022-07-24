@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test page
+title: Camera Scaler
 ---
 
 

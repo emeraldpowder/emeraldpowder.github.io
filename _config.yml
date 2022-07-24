@@ -40,3 +40,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+
+collections:
+  unity_assets:
+    output: true
+    permalink: /unity_assets/:path/
