@@ -42,6 +42,6 @@ exclude:
   - update_boostrap.sh
 
 collections:
-  unity_assets:
+  unity-assets:
     output: true
     permalink: /unity-assets/:path/
