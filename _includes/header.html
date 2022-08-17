@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: #204F39 !important">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">
+    <a class="navbar-brand" rel="author" href="{{ page.base-url }}/">
       <img src="{{ "/assets/logo.png" | relative_url }}" width="30" height="30" class="d-inline-block align-top" alt="Site logo">
       {{ site.title | escape }}
     </a>
@@ -29,9 +29,18 @@
           </a>
           <ul class="dropdown-menu">
             {% for unity_asset in site.unity-assets %}
-              <li><a class="dropdown-item" href="{{ unity_asset.url }}">{{ unity_asset.title }}</a></li>
+              <li><a class="dropdown-item" href="{{ page.base-url }}{{ unity_asset.url }}">{{ unity_asset.title }}</a></li>
             {% endfor %}
             <!--<li><hr class="dropdown-divider"></li>-->
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            {% if page.lang == "en" %}🇺🇸{% else %}🇷🇺{% endif %}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item{% if page.lang == "en" %} active{% endif %}" {% if page.lang != "en" %}href="{{ page.url | remove_first: "ru/" | remove: ".html" | remove: ".md" }}"{% endif %}>🇺🇸</a></li>
+            <li><a class="dropdown-item{% if page.lang == "ru" %} active{% endif %}" {% if page.lang != "ru" %}href="/ru{{ page.url }}"{% endif %}>🇷🇺</a></li>
           </ul>
         </li>
       </ul>

@@ -9,11 +9,11 @@ Camera Scaler component, that works just like Canvas Scaler (Expand/Shrink modes
 
 ### How to use it
 
-Add the `Camera Scaler` component to game object with Camera. Set `ReferenceResolution` to the resolution you have set in Game View (or resolution you usually develop & test you game with) and choose `Mode` that fits your game. You can see different modes behaviour on [video](), in a [cheatsheet](#modes-cheatsheet) or in included example scenes
+Add the `Camera Scaler` component to game object with Camera. Set `ReferenceResolution` to the resolution you have set in Game View (or resolution you usually develop & test you game with) and choose `Mode` that fits your game. You can see different modes behaviour on [video](https://youtu.be/MsVARBLW05A), in a [cheatsheet](#modes-cheatsheet) or in included example scenes
 
 ### Modes
 * **Constant Width** - this mode keeps camera width (or horizontal fov, in case of perspective camera) constant on all aspect ratios. Works the same as **MatchWidthOrHeight** with **Match** set to 0
-* **MatchWidthOrHeight** - this mode requires you to set Match value, and interpolates between **Constant Width** and **Constant Height** modes. It works just like Canvas Scaler's MatchWidthOrHeight mode, so if you have canvas with Canvas Scaler on top of camera, UI objects will line up with world objects
+* **MatchWidthOrHeight** - this mode requires you to set Match value (0 to 1), and interpolates between **Constant Width** and **Constant Height** modes. It works just like Canvas Scaler's MatchWidthOrHeight mode, so if you have canvas with Canvas Scaler on top of camera, UI objects will line up with world objects
 * **Expand** - this mode always keeps area within ReferenceResolution visible at the screen, by expanding camera horizontally if device is wider, or vertically if device is taller. It works just like Canvas Scaler's Expand mode
 * **Shrink** - this mode never allows area outside ReferenceResolution visible at the screen, by shrinking camera horizontally if device is narrower, or vertically if device is shorter. It works just like Canvas Scaler's Shrink mode
 * **Constant Height** - this mode does nothing, as Unity Camera behaves like this by default
