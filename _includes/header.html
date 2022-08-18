@@ -40,7 +40,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item{% if page.lang == "en" %} active{% endif %}" {% if page.lang != "en" %}href="{{ page.url | remove_first: "ru/" | remove: ".html" | remove: ".md" }}"{% endif %}>🇺🇸</a></li>
-            <li><a class="dropdown-item{% if page.lang == "ru" %} active{% endif %}" {% if page.lang != "ru" %}href="/ru{{ page.url }}"{% endif %}>🇷🇺</a></li>
+            <li><a class="dropdown-item{% if page.lang == "ru" %} active{% endif %}" {% if page.lang != "ru" %}href="/ru{{ page.url | append: "@" | remove_first: "/@" }}"{% endif %}>🇷🇺</a></li>
           </ul>
         </li>
       </ul>
