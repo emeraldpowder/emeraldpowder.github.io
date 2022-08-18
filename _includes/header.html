@@ -36,11 +36,15 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            {% if page.lang == "en" %}🇺🇸{% else %}🇷🇺{% endif %}
+            {% if page.lang == "en" %}<img src="{{ "/assets/en.png" | relative_url }}" alt="EN" height="22px" />{% else %}<img src="{{ "/assets/ru.png" | relative_url }}" alt="RU" height="22px" />{% endif %}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item{% if page.lang == "en" %} active{% endif %}" {% if page.lang != "en" %}href="{{ page.url | remove_first: "ru/" | remove: ".html" | remove: ".md" }}"{% endif %}>🇺🇸</a></li>
-            <li><a class="dropdown-item{% if page.lang == "ru" %} active{% endif %}" {% if page.lang != "ru" %}href="/ru{{ page.url | append: "@" | remove_first: "/@" }}"{% endif %}>🇷🇺</a></li>
+            <li><a class="dropdown-item{% if page.lang == "en" %} active{% endif %}" {% if page.lang != "en" %}href="{{ page.url | remove_first: "ru/" | remove: ".html" | remove: ".md" }}"{% endif %}>
+              <img src="{{ "/assets/en.png" | relative_url }}" alt="EN" />
+            </a></li>
+            <li><a class="dropdown-item{% if page.lang == "ru" %} active{% endif %}" {% if page.lang != "ru" %}href="/ru{{ page.url | append: "@" | remove_first: "/@" }}"{% endif %}>
+              <img src="{{ "/assets/ru.png" | relative_url }}" alt="RU" />
+            </a></li>
           </ul>
         </li>
       </ul>
