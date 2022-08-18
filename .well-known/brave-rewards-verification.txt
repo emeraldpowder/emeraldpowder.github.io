@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: emeraldpowder.github.io
+Token: 8c5f247eb82fbdf74b036fd2136315bc63bdabb1978d6afb5b3dcd7d7f79b201
