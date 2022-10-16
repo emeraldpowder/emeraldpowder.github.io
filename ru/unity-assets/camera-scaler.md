@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Camera Scaler
+title: 🎥 Camera Scaler
 ---
 
-[Скачать на Asset Store](https://u3d.as/2Tag)
+[📥 Скачать на Asset Store 📥](https://u3d.as/2Tag)
 
 Компонент Camera Scaler, который работает точно так же как и Canvas Scaler (режимы Expand/Shrink, камера с постоянной шириной, а не высотой, и другое), для 2D и 3D камер (с перспективной и ортогональной проекцией)
 
@@ -36,4 +36,4 @@ title: Camera Scaler
 
 [![Шпаргалка по режимам]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})
 
-[Скачать на Asset Store](https://u3d.as/2Tag)
+[📥 Скачать на Asset Store 📥](https://u3d.as/2Tag)

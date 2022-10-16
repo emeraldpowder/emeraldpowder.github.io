@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Camera Scaler
+title: 🎥 Camera Scaler
 ---
 
-[Get it on Asset Store](https://u3d.as/2Tag)
+[📥 Get it on Asset Store 📥](https://u3d.as/2Tag)
 
 Camera Scaler component, that works just like Canvas Scaler (Expand/Shrink modes, making camera match width instead of height, etc), for both prespective and orthographics cameras
 
@@ -36,4 +36,4 @@ There is two scenes in Examples folder, **2D Playground** and **3D Playground**.
 
 [![Modes cheatsheet]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})]({{ "/assets/images/camera-scaler-cheatsheet.png" | relative_url }})
 
-[Get it on Asset Store](https://u3d.as/2Tag)
+[📥 Get it on Asset Store 📥](https://u3d.as/2Tag)
